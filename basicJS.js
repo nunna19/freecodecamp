@@ -1,3 +1,13 @@
+//              \'	single quote
+//              \"	double quote
+//              \\	backslash
+//              \n	newline
+//              \r	carriage return
+//              \t	tab
+//              \b	backspace
+//              \f	form feed
+
+
 // .push() push in of to last arr
 var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog",3])
@@ -46,3 +56,10 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6)); // Modify this line to test
 console.log("After: " + JSON.stringify(testArr));
+
+
+//Returning Boolean Values from Functions
+function isLess(a, b) {
+  return a < b 
+  }
+  isLess(10, 15);// true
