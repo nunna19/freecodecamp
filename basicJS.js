@@ -63,3 +63,68 @@ function isLess(a, b) {
   return a < b 
   }
   isLess(10, 15);// true
+
+
+  var niko ={
+    name:"niko"
+  }
+  niko.cute = true
+  console.log(niko)
+  
+  
+  class Person{
+    constructor(name){
+     
+      this.name = name  ///  "encapusalation"
+    }
+   goSleep(){
+     console.log("Zzz")
+   }
+  
+   funnyLaugh () {
+     console.log( this.name + " say 5555+ ")
+   }
+  
+  }
+  let me = new Person ("nunna")
+  console.log(me)
+  me.funnyLaugh() /// "abstraction"
+  let anotherPerson = new Person ("niko")
+  console.log(anotherPerson)
+  anotherPerson.funnyLaugh()
+  
+  
+  
+  
+  
+  class Teacher extends Person {
+    constructor(name, skill){
+      super(name)
+      // this.sayName = this.sayName.bind(this)
+      this.skill = skill
+    }
+    sayName () {
+      console.log(this)
+    }
+    funnyLaugh(){ /// polymorphisism
+      console.log(this.name + " hahaha when his finish " + this.skill)
+    }
+  }
+  let nicolas = new Teacher ("nikooo", "helping me") 
+  nicolas.sayName() 
+  nicolas.funnyLaugh() /// "inheritance" got from parent
+  nicolas.goSleep()
+  
+  let nunna = new Teacher ("buay", "cute")
+  console.log(nunna)
+  nunna.funnyLaugh()/// "abstraction"
+  // what does abstraction mean?
+  // its like when you drive a car and you don't know how the engine works but it doesn't work
+  // what does encapsulation mean?
+  // this is when something is inside of something else like scope or local variable
+  // what does inheritance mean?
+  // Using extends you are able to use a parent's stuff
+  // get qualities from parent
+  // What is polymorphisism? (edited) 
+  // When you are able to change the names and functionality of children
+  
