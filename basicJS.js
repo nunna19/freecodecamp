@@ -65,6 +65,35 @@ function isLess(a, b) {
   isLess(10, 15);// true
 
 
+
+  // Counting Cards
+  var count = 0;
+  function cc(card) {
+  // //   // Only change code below this line
+  var regex = /[JQKA]/
+   if (card > 1 && card < 7 ){count++;}
+   else if(card === 10 || String(card).match(regex)){count--;}
+   if (count > 0 )return count + " Bet";
+     return count + " Hold"
+   
+    // Only change code above this line
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   var niko ={
     name:"niko"
   }
@@ -94,9 +123,6 @@ function isLess(a, b) {
   anotherPerson.funnyLaugh()
   
   
-  
-  
-  
   class Teacher extends Person {
     constructor(name, skill){
       super(name)
@@ -119,12 +145,17 @@ function isLess(a, b) {
   console.log(nunna)
   nunna.funnyLaugh()/// "abstraction"
   // what does abstraction mean?
-  // its like when you drive a car and you don't know how the engine works but it doesn't work
+  // its like when you drive a car and you don't know how the engine works but it does work
+
   // what does encapsulation mean?
   // this is when something is inside of something else like scope or local variable
+
   // what does inheritance mean?
   // Using extends you are able to use a parent's stuff
   // get qualities from parent
+
   // What is polymorphisism? (edited) 
   // When you are able to change the names and functionality of children
+
+
   
