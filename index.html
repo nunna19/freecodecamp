@@ -1,19 +1,38 @@
 <!DOCTYPE html>
- <html class="no-js"> 
+<html class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
   </head>
   <body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./basicJS.js" async defer></script> -->
     <script>
-      document.write("JavaScript Hello World!");
-      </script>
-    
-    <script src="./basicJS.js" async defer></script>
+      $("body").html("<div class='niko'> NUNNA </div>");
+      $("body").html("")
+
+      $(".niko").html("<h1> Chiralerdsitthikhun </h1>"); // change
+      $(".niko").append("<h1> after  Chiralerdsitthikhun </h1>"); 
+      $(".niko").prepend("<h1> before Chiralerdsitthikhun </h1>");
+
+      function add(connect) {
+        for (var i = 0; i <= 3; i++) {
+          $(".niko").append(`<h1> ${connect} Chiralerdsitthikhun </h1>`);
+        }
+      }
+    add("hi")
+
+    function input(){
+      $(".")
+    }
+    </script>
   </body>
 </html>
